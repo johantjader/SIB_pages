@@ -4,7 +4,7 @@
 
 **Core Value**: En tillförlitlig, versionshanterad och tillgänglig källa för normativa artefakter för alla medlemmar i federationen.
 
-**Current Focus**: Project complete.
+**Current Focus**: Project Complete.
 
 ## Current Position
 
@@ -14,9 +14,9 @@
 
 ## Performance Metrics
 
-- **Velocity**: All phases complete (4/4)
-- **Quality**: Production-ready documentation portal with Digg-style branding.
-- **Reliability**: Automated sync and versioning fully operational and documented.
+- **Velocity**: All 5 phases complete (5/5)
+- **Quality**: Production-ready, accessible, and automated portal.
+- **Reliability**: Automated sync, news scraping, and versioning operational.
 
 ## Accumulated Context
 
@@ -28,12 +28,12 @@
 - Source repo: johantjader/SIB-normativa-artefakter-sandbox (private).
 
 ### Todos
-- [ ] Refine colors and contrast for Digg.se alignment (UX-02)
-- [ ] Enable Mermaid diagram rendering (FEAT-01)
-- [ ] Align visual style with Digg.se (UX-01)
-- [ ] Implement external news feed for blog (DOC-02)
-- [ ] Automate content sync on push to sandbox (CI-CD-01)
-- [ ] Clarify and document artifact versioning process (DOC-01)
+- [x] Refine colors and contrast for Digg.se alignment (UX-02)
+- [x] Enable Mermaid diagram rendering (FEAT-01)
+- [x] Align visual style with Digg.se (UX-01)
+- [x] Implement external news feed for blog (DOC-02)
+- [x] Automate content sync on push to sandbox (CI-CD-01)
+- [x] Clarify and document artifact versioning process (DOC-01)
 - [x] Initialize Docusaurus v3 environment (SETUP-01)
 - [x] Configure GitHub Pages (SETUP-02)
 - [x] Establish CI/CD via GitHub Actions (SETUP-03)

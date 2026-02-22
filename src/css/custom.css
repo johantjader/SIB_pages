@@ -19,6 +19,10 @@
   --ifm-navbar-background-color: #ffffff;
   --ifm-navbar-link-color: #000000;
   
+  /* Text Contrast - Pure Black for max readability on white */
+  --ifm-font-color-base: #000000;
+  --ifm-heading-color: #000000;
+  
   --ifm-font-family-base: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --ifm-heading-font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   
@@ -29,25 +33,35 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Accessible Dark Mode Refinement */
 [data-theme='dark'] {
-  --ifm-color-primary: #4d8ceb;
-  --ifm-color-primary-dark: #337ce8;
-  --ifm-color-primary-darker: #2673e7;
+  --ifm-color-primary: #4FA3FF; /* Tinted Science Blue for WCAG contrast on dark bg */
+  --ifm-color-primary-dark: #3389FF;
+  --ifm-color-primary-darker: #1A70FF;
   --ifm-color-primary-darkest: #005be2;
-  --ifm-color-primary-light: #669cf0;
-  --ifm-color-primary-lighter: #73a3f1;
-  --ifm-color-primary-lightest: #99bef5;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary-light: #6BB2FF;
+  --ifm-color-primary-lighter: #87C1FF;
+  --ifm-color-primary-lightest: #A3D0FF;
   
-  --ifm-navbar-background-color: #1b1b1d;
+  /* High contrast text for dark mode */
+  --ifm-font-color-base: #F5F6F7;
+  --ifm-heading-color: #FFFFFF;
+  
+  --ifm-background-color: #1B1B1D; /* Professional dark grey, not pure black */
+  --ifm-navbar-background-color: #1B1B1D;
   --ifm-footer-background-color: #121212;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* Custom Header / Navbar Styling */
 .navbar {
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
   border-bottom: 1px solid #e9ecef;
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid #2e2e2e;
 }
 
 .navbar__brand {
@@ -60,19 +74,20 @@
   --ifm-button-background-color: var(--ifm-color-primary);
   --ifm-button-border-color: var(--ifm-color-primary);
   font-weight: 600;
+  color: #fff !important; /* Ensure white text on blue buttons */
 }
 
 .button--secondary {
   --ifm-button-background-color: #EF8271; /* Digg Apricot */
   --ifm-button-border-color: #EF8271;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
 }
 
 .button--secondary:hover {
   --ifm-button-background-color: #ec6b57;
   --ifm-button-border-color: #ec6b57;
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Spacing and Readability */
@@ -87,6 +102,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   border-top: 1px solid #e9ecef;
+}
+
+[data-theme='dark'] .footer {
+  border-top: 1px solid #2e2e2e;
 }
 
 /* Link underlining in body text */

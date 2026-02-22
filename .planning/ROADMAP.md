@@ -6,6 +6,7 @@
 - [x] **Phase 2: Content & Versioning** - Migrate normative artifacts and enable versioning snapshots.
 - [x] **Phase 3: Search & UX Refinement** - Implement local search and polish navigation for a production-ready experience.
 - [x] **Phase 4: Brand Alignment & Automation** - Mirror Digg.se visual style, automate sync on push, and integrate external news.
+- [x] **Phase 5: Final Refinements & Automation** - Resolve color/contrast issues, enable Mermaid diagrams, and fully automate sync triggers.
 
 ## Phase Details
 
@@ -31,15 +32,14 @@
   3. User can identify the lifecycle stage of an artifact (STABLE/DRAFT) via visible badges.
 **Plans**: TBD
 
-### Phase 4: Brand Alignment & Automation
-**Goal**: A highly professional, automated, and visually aligned portal that mirrors the Digg.se experience.
-**Depends on**: Phase 3
-**Requirements**: UX-01, DOC-02, CI-CD-01, DOC-01
+### Phase 5: Final Refinements & Automation
+**Goal**: Polished accessibility, visual diagram support, and zero-touch content automation.
+**Depends on**: Phase 4
+**Requirements**: UX-02, FEAT-01, CI-CD-01, DOC-01
 **Success Criteria** (what must be TRUE):
-  1. The site's visual identity (colors, fonts, layout) is indistinguishable from Digg.se (white-labeled).
-  2. The news section automatically populates with updates from external sources like Digg.se.
-  3. Content sync triggers automatically upon pushes to the private sandbox repository.
-  4. The artifact versioning process is fully documented for future maintainers.
+  1. Light and Dark themes pass WCAG contrast standards and mirror Digg.se closely.
+  2. Mermaid diagrams render as visual charts in artifacts.
+  3. Content sync triggers instantly upon sandbox pushes.
 **Plans**: TBD
 
 ## Progress Table
@@ -50,6 +50,7 @@
 | 2. Content & Versioning | 1/1 | Completed | 2026-02-22 |
 | 3. Search & UX Refinement | 2/2 | Completed | 2026-02-22 |
 | 4. Brand Alignment & Automation | 3/3 | Completed | 2026-02-22 |
+| 5. Final Refinements & Automation | 2/2 | Completed | 2026-02-22 |
 
 ---
 *Roadmap generated: 2026-02-22*

@@ -12,7 +12,12 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Konceptuella',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: () => (
+      <svg className={styles.featureSvg} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+      </svg>
+    ),
     description: (
       <>
         Gemensamma begreppsmodeller, arkitekturprinciper och konceptuella ramverk 
@@ -22,7 +27,11 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Normativa',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: () => (
+      <svg className={styles.featureSvg} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+    ),
     description: (
       <>
         Tvingande regler, policyer och kravspecifikationer som medlemmar 
@@ -32,7 +41,13 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Stödjande',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: () => (
+      <svg className={styles.featureSvg} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+    ),
     description: (
       <>
         Vägledningar, implementeringsstöd och praktiska exempel för att underlätta 

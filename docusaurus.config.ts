@@ -14,6 +14,10 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
   // Set the production url of your site here
   url: 'https://johantjader.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -70,6 +74,7 @@ const config: Config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       ({
@@ -85,6 +90,9 @@ const config: Config = {
   ],
 
   themeConfig: {
+    mermaid: {
+      theme: {light: 'neutral', dark: 'forest'},
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
@@ -117,20 +125,41 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Dokumentation',
+          title: 'Artefakter',
           items: [
             {
               label: 'Begreppslista',
               to: '/docs/konceptuella/begreppslista',
             },
+            {
+              label: 'Normativa Regler',
+              to: '/docs/normativa/federationspolicy',
+            },
           ],
         },
         {
-          title: 'Community',
+          title: 'Resurser',
           items: [
+            {
+              label: 'Digg.se',
+              href: 'https://www.digg.se',
+            },
+            {
+              label: 'Sveriges Dataportal',
+              href: 'https://www.dataportal.se',
+            },
+          ],
+        },
+        {
+          title: 'Mer',
+          items: [
+            {
+              label: 'Nyheter',
+              to: '/blog',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/johantjader/SIB_pages',
@@ -138,7 +167,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SIB Normativa Artefakter. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SIB Normativa Artefakter. Innehåll hämtas från Myndigheten för digital förvaltning.`,
     },
     prism: {
       theme: prismThemes.github,
