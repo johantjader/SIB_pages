@@ -17,7 +17,7 @@
   2. The site is automatically rebuilt and redeployed whenever changes are pushed to the main branch.
   3. The base Docusaurus framework is functional with TypeScript support.
 **Plans**: 2 plans
-- [ ] 01-01-PLAN.md — Bootstrap Docusaurus v3 with TypeScript and configure for GitHub Pages.
+- [x] 01-01-PLAN.md — Bootstrap Docusaurus v3 with TypeScript and configure for GitHub Pages.
 - [ ] 01-02-PLAN.md — Create CI/CD workflow and verify live deployment.
 
 ### Phase 2: Content & Versioning
@@ -44,7 +44,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployment | 0/2 | Not started | - |
+| 1. Foundation & Deployment | 1/2 | In progress | - |
 | 2. Content & Versioning | 0/1 | Not started | - |
 | 3. Search & UX Refinement | 0/1 | Not started | - |
 
