@@ -28,6 +28,7 @@
 - Source repo: johantjader/SIB-normativa-artefakter-sandbox (private).
 
 ### Todos
+- [ ] Align visual style with Digg.se (UX-01)
 - [ ] Implement external news feed for blog (DOC-02)
 - [ ] Automate content sync on push to sandbox (CI-CD-01)
 - [ ] Clarify and document artifact versioning process (DOC-01)
