@@ -3,7 +3,7 @@
 ## Phases
 
 - [x] **Phase 1: Foundation & Deployment** - Establish the Docusaurus environment and automated CI/CD pipeline to GitHub Pages.
-- [ ] **Phase 2: Content & Versioning** - Migrate normative artifacts and enable versioning snapshots.
+- [x] **Phase 2: Content & Versioning** - Migrate normative artifacts and enable versioning snapshots.
 - [ ] **Phase 3: Search & UX Refinement** - Implement local search and polish navigation for a production-ready experience.
 
 ## Phase Details
@@ -45,7 +45,7 @@
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 2/2 | Completed | 2026-02-22 |
-| 2. Content & Versioning | 0/1 | Not started | - |
+| 2. Content & Versioning | 1/1 | Completed | 2026-02-22 |
 | 3. Search & UX Refinement | 0/1 | Not started | - |
 
 ---
