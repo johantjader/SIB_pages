@@ -21,6 +21,7 @@ jobs:
           repository: johantjader/SIB-normativa-artefakter-sandbox
           token: ${{ secrets.PAT_TOKEN }}
           path: sandbox-repo
+          persist-credentials: false
 
       - name: Sync Files
         run: |
@@ -28,8 +29,6 @@ jobs:
           mkdir -p docs
           
           # Use rsync to sync content from sandbox to docs/
-          # --delete: removes files in docs/ that aren't in sandbox-repo/
-          # --exclude: don't sync .git folder or the sandbox's own README
           rsync -av --delete --exclude '.git*' --exclude 'README.md' sandbox-repo/ docs/
           
           # Clean up
@@ -44,7 +43,8 @@ jobs:
           # Only commit if there are changes
           if ! git diff-index --quiet HEAD; then
             git commit -m "chore: sync content from sandbox [skip ci]"
-            git push
+            # Explicitly push using the PAT in the URL to override any credential issues
+            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/johantjader/SIB_pages.git main
           else
             echo "No changes to sync."
           fi
