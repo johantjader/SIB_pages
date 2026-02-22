@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://jcols.github.io',
+  url: 'https://johantjader.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/SIB_pages/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jcols', // Usually your GitHub org/user name.
+  organizationName: 'johantjader', // Usually your GitHub org/user name.
   projectName: 'SIB_pages', // Usually your repo name.
   trailingSlash: true,
 
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/jcols/SIB_pages/tree/main/',
+            'https://github.com/johantjader/SIB_pages/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/jcols/SIB_pages/tree/main/',
+            'https://github.com/johantjader/SIB_pages/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,7 +90,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blogg', position: 'left'},
         {
-          href: 'https://github.com/jcols/SIB_pages',
+          href: 'https://github.com/johantjader/SIB_pages',
           label: 'GitHub',
           position: 'right',
         },
@@ -113,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/jcols/SIB_pages',
+              href: 'https://github.com/johantjader/SIB_pages',
             },
           ],
         },
