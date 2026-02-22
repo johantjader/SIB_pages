@@ -28,6 +28,7 @@
 - Source repo: johantjader/SIB-normativa-artefakter-sandbox (private).
 
 ### Todos
+- [ ] Implement external news feed for blog (DOC-02)
 - [ ] Automate content sync on push to sandbox (CI-CD-01)
 - [ ] Clarify and document artifact versioning process (DOC-01)
 - [x] Initialize Docusaurus v3 environment (SETUP-01)
