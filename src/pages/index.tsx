@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/konceptuella/begreppslista">
-            Docusaurus Tutorial - 5min ⏱️
+            Utforska Artefakter
           </Link>
         </div>
       </div>
