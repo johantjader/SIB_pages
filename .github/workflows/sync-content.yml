@@ -36,15 +36,16 @@ jobs:
 
       - name: Commit and Push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "johantjader"
+          git config --global user.email "johan.c.olsson@gmail.com"
           git add docs/
           
-          # Only commit if there are changes
           if ! git diff-index --quiet HEAD; then
             git commit -m "chore: sync content from sandbox [skip ci]"
-            # Explicitly push using the PAT in the URL to override any credential issues
-            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/johantjader/SIB_pages.git main
+            # Remove the local credential helper that might be forcing the GITHUB_TOKEN
+            git config --local --unset-all http.https://github.com/.extraheader || true
+            # Push using the PAT directly in the URL
+            git push https://${{ secrets.PAT_TOKEN }}@github.com/johantjader/SIB_pages.git main
           else
             echo "No changes to sync."
           fi
