@@ -2,8 +2,7 @@
 
 **STOPP!**
 
-Innehållet i denna mapp (`docs/`) synkroniseras automatiskt från det privata repositoryt:
-`johantjader/SIB-normativa-artefakter-sandbox`
+Innehållet i denna mapp (`docs/`) synkroniseras automatiskt från det privata källrepositoryt.
 
 ### Viktig information:
 1. **Redigera inte filer här:** Alla ändringar du gör i denna mapp kommer att **raderas och skrivas över** nästa gång synkroniseringen körs.

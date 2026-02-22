@@ -4,7 +4,7 @@ Denna guide beskriver hur normativa artefakter hanteras i SIB-portalen, från k�
 
 ## 1. Innehållssynkronisering (Sync)
 
-Portalen hämtar automatiskt allt innehåll från det privata repositoryt `johantjader/SIB-normativa-artefakter-sandbox`.
+Portalen hämtar automatiskt allt innehåll från det privata källrepositoryt.
 
 - **Trigger:** Varje push till `main`-branchen i sandlådan skickar en signal (Repository Dispatch) till detta repository.
 - **Workflow:** GitHub Action-filen `.github/workflows/sync-content.yml` körs.

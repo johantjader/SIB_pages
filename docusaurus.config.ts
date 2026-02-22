@@ -144,10 +144,6 @@ const config: Config = {
           title: 'Resurser',
           items: [
             {
-              label: 'Digg.se',
-              href: 'https://www.digg.se',
-            },
-            {
               label: 'Sveriges Dataportal',
               href: 'https://www.dataportal.se',
             },
@@ -167,7 +163,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SIB Normativa Artefakter. Innehåll hämtas från Myndigheten för digital förvaltning.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SIB Normativa Artefakter.`,
     },
     prism: {
       theme: prismThemes.github,
