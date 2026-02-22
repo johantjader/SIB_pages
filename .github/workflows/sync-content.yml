@@ -4,6 +4,8 @@ on:
   workflow_dispatch: # Manual trigger
   schedule:
     - cron: '0 0 * * *' # Daily sync at midnight
+  repository_dispatch:
+    types: [sync_content]
 
 jobs:
   sync:
@@ -15,6 +17,15 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Checkout Sandbox
         uses: actions/checkout@v4
         with:
@@ -23,25 +34,34 @@ jobs:
           path: sandbox-repo
           persist-credentials: false
 
-      - name: Sync Files
+      - name: Sync Artifacts
         run: |
           # Ensure docs directory exists
           mkdir -p docs
-          
           # Use rsync to sync content from sandbox to docs/
           rsync -av --delete --exclude '.git*' --exclude 'README.md' sandbox-repo/ docs/
-          
           # Clean up
           rm -rf sandbox-repo
+
+      - name: Run News Scraper
+        run: |
+          # Remove default tutorial blog posts if they exist
+          rm -f blog/2019-05-28-first-blog-post.md
+          rm -f blog/2019-05-29-long-blog-post.md
+          rm -f blog/2021-08-01-mdx-blog-post.mdx
+          rm -rf blog/2021-08-26-welcome
+          
+          # Run the scraper to fetch latest from Digg
+          node scripts/scrape-digg-news.js
 
       - name: Commit and Push
         run: |
           git config --global user.name "johantjader"
           git config --global user.email "johan.c.olsson@gmail.com"
-          git add docs/
+          git add docs/ blog/
           
           if ! git diff-index --quiet HEAD; then
-            git commit -m "chore: sync content from sandbox [skip ci]"
+            git commit -m "chore: sync artifacts and news [skip ci]"
             # Remove the local credential helper that might be forcing the GITHUB_TOKEN
             git config --local --unset-all http.https://github.com/.extraheader || true
             # Push using the PAT directly in the URL

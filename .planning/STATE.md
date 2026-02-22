@@ -4,14 +4,14 @@
 
 **Core Value**: En tillförlitlig, versionshanterad och tillgänglig källa för normativa artefakter för alla medlemmar i federationen.
 
-**Current Focus**: Align visual style with Digg.se.
+**Current Focus**: Implement news scraper and automated sync triggers.
 
 ## Current Position
 
 **Phase**: Phase 4: Brand Alignment & Automation
-**Plan**: 04-01
+**Plan**: 04-02
 **Status**: In progress
-**Progress Bar**: [==========>----------] 50%
+**Progress Bar**: [===========>----------] 55%
 
 ## Performance Metrics
 
