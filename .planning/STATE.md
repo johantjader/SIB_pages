@@ -28,6 +28,8 @@
 - Source repo: johantjader/SIB-normativa-artefakter-sandbox (private).
 
 ### Todos
+- [ ] Refine colors and contrast for Digg.se alignment (UX-02)
+- [ ] Enable Mermaid diagram rendering (FEAT-01)
 - [ ] Align visual style with Digg.se (UX-01)
 - [ ] Implement external news feed for blog (DOC-02)
 - [ ] Automate content sync on push to sandbox (CI-CD-01)
