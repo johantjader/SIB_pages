@@ -90,6 +90,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Nyheter', position: 'left'},
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+        },
+        {
           href: 'https://github.com/johantjader/SIB_pages',
           label: 'GitHub',
           position: 'right',
@@ -103,8 +108,8 @@ const config: Config = {
           title: 'Dokumentation',
           items: [
             {
-              label: 'Introduktion',
-              to: '/docs/intro',
+              label: 'Begreppslista',
+              to: '/docs/konceptuella/begreppslista',
             },
           ],
         },
