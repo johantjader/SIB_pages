@@ -4,27 +4,97 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Digg.se inspired palette - Science Blue #005be2 */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #005be2;
+  --ifm-color-primary-dark: #0052cc;
+  --ifm-color-primary-darker: #004dbf;
+  --ifm-color-primary-darkest: #003f9e;
+  --ifm-color-primary-light: #1a6be5;
+  --ifm-color-primary-lighter: #2673e7;
+  --ifm-color-primary-lightest: #4d8ceb;
+  
+  --ifm-background-color: #ffffff;
+  --ifm-footer-background-color: #f8f9fa;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #000000;
+  
+  --ifm-font-family-base: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --ifm-heading-font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  
+  --ifm-global-border-radius: 4px;
+  --ifm-button-border-radius: 4px;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4d8ceb;
+  --ifm-color-primary-dark: #337ce8;
+  --ifm-color-primary-darker: #2673e7;
+  --ifm-color-primary-darkest: #005be2;
+  --ifm-color-primary-light: #669cf0;
+  --ifm-color-primary-lighter: #73a3f1;
+  --ifm-color-primary-lightest: #99bef5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  --ifm-navbar-background-color: #1b1b1d;
+  --ifm-footer-background-color: #121212;
+}
+
+/* Custom Header / Navbar Styling */
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar__brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Digg-style buttons */
+.button--primary {
+  --ifm-button-background-color: var(--ifm-color-primary);
+  --ifm-button-border-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.button--secondary {
+  --ifm-button-background-color: #EF8271; /* Digg Apricot */
+  --ifm-button-border-color: #EF8271;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button--secondary:hover {
+  --ifm-button-background-color: #ec6b57;
+  --ifm-button-border-color: #ec6b57;
+  color: #fff;
+}
+
+/* Spacing and Readability */
+.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding: 3rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.footer {
+  border-top: 1px solid #e9ecef;
+}
+
+/* Link underlining in body text */
+.theme-doc-markdown a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration-thickness: 2px;
 }

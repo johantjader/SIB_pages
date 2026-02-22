@@ -4,7 +4,8 @@
 
 - [x] **Phase 1: Foundation & Deployment** - Establish the Docusaurus environment and automated CI/CD pipeline to GitHub Pages.
 - [x] **Phase 2: Content & Versioning** - Migrate normative artifacts and enable versioning snapshots.
-- [ ] **Phase 3: Search & UX Refinement** - Implement local search and polish navigation for a production-ready experience.
+- [x] **Phase 3: Search & UX Refinement** - Implement local search and polish navigation for a production-ready experience.
+- [ ] **Phase 4: Brand Alignment & Automation** - Mirror Digg.se visual style, automate sync on push, and integrate external news.
 
 ## Phase Details
 
@@ -30,14 +31,15 @@
   3. User can identify the lifecycle stage of an artifact (STABLE/DRAFT) via visible badges.
 **Plans**: TBD
 
-### Phase 3: Search & UX Refinement
-**Goal**: Highly discoverable and accessible documentation portal.
-**Depends on**: Phase 2
-**Requirements**: UX-01, UX-02, UX-03
+### Phase 4: Brand Alignment & Automation
+**Goal**: A highly professional, automated, and visually aligned portal that mirrors the Digg.se experience.
+**Depends on**: Phase 3
+**Requirements**: UX-01, DOC-02, CI-CD-01, DOC-01
 **Success Criteria** (what must be TRUE):
-  1. User can find specific normative text using a local search bar that indexes all versions.
-  2. User can navigate the entire artifact library via a responsive sidebar and version dropdown.
-  3. User can access and read the artifacts effectively on mobile and tablet devices.
+  1. The site's visual identity (colors, fonts, layout) is indistinguishable from Digg.se (white-labeled).
+  2. The news section automatically populates with updates from external sources like Digg.se.
+  3. Content sync triggers automatically upon pushes to the private sandbox repository.
+  4. The artifact versioning process is fully documented for future maintainers.
 **Plans**: TBD
 
 ## Progress Table
@@ -46,7 +48,8 @@
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 2/2 | Completed | 2026-02-22 |
 | 2. Content & Versioning | 1/1 | Completed | 2026-02-22 |
-| 3. Search & UX Refinement | 0/1 | Not started | - |
+| 3. Search & UX Refinement | 2/2 | Completed | 2026-02-22 |
+| 4. Brand Alignment & Automation | 0/4 | Not started | - |
 
 ---
 *Roadmap generated: 2026-02-22*
