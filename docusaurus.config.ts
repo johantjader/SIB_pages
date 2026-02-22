@@ -86,9 +86,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Dokumentation',
+          label: 'Artefakter',
         },
-        {to: '/blog', label: 'Blogg', position: 'left'},
+        {to: '/blog', label: 'Nyheter', position: 'left'},
         {
           href: 'https://github.com/johantjader/SIB_pages',
           label: 'GitHub',

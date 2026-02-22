@@ -2,7 +2,7 @@
 
 ## Phases
 
-- [ ] **Phase 1: Foundation & Deployment** - Establish the Docusaurus environment and automated CI/CD pipeline to GitHub Pages.
+- [x] **Phase 1: Foundation & Deployment** - Establish the Docusaurus environment and automated CI/CD pipeline to GitHub Pages.
 - [ ] **Phase 2: Content & Versioning** - Migrate normative artifacts and enable versioning snapshots.
 - [ ] **Phase 3: Search & UX Refinement** - Implement local search and polish navigation for a production-ready experience.
 
@@ -18,7 +18,7 @@
   3. The base Docusaurus framework is functional with TypeScript support.
 **Plans**: 2 plans
 - [x] 01-01-PLAN.md — Bootstrap Docusaurus v3 with TypeScript and configure for GitHub Pages.
-- [ ] 01-02-PLAN.md — Create CI/CD workflow and verify live deployment.
+- [x] 01-02-PLAN.md — Create CI/CD workflow and verify live deployment.
 
 ### Phase 2: Content & Versioning
 **Goal**: Normative artifacts are migrated, structured, and version-controlled.
@@ -44,7 +44,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployment | 1/2 | In progress | - |
+| 1. Foundation & Deployment | 2/2 | Completed | 2026-02-22 |
 | 2. Content & Versioning | 0/1 | Not started | - |
 | 3. Search & UX Refinement | 0/1 | Not started | - |
 

@@ -1,0 +1,50 @@
+name: Sync Content from Sandbox
+
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 0 * * *' # Daily sync at midnight
+
+jobs:
+  sync:
+    name: Sync Markdown Content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SIB_pages
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout Sandbox
+        uses: actions/checkout@v4
+        with:
+          repository: johantjader/SIB-normativa-artefakter-sandbox
+          token: ${{ secrets.PAT_TOKEN }}
+          path: sandbox-repo
+
+      - name: Sync Files
+        run: |
+          # Ensure docs directory exists
+          mkdir -p docs
+          
+          # Use rsync to sync content from sandbox to docs/
+          # --delete: removes files in docs/ that aren't in sandbox-repo/
+          # --exclude: don't sync .git folder or the sandbox's own README
+          rsync -av --delete --exclude '.git*' --exclude 'README.md' sandbox-repo/ docs/
+          
+          # Clean up
+          rm -rf sandbox-repo
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          
+          # Only commit if there are changes
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore: sync content from sandbox [skip ci]"
+            git push
+          else
+            echo "No changes to sync."
+          fi
