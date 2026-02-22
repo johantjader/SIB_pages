@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+digg:
+  label: Digg
+  description: Nyheter från Myndigheten för digital förvaltning.
+digital-identitet:
+  label: Digital Identitet
+  description: Nyheter rörande digital identitet och e-legitimation.
+externa-nyheter:
+  label: Externa Nyheter
+  description: Omvärldsbevakning och nyheter från externa källor.
