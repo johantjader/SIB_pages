@@ -102,37 +102,37 @@ Beskrivning av tabellen och hur kolumnerna ska förstås finns beskrivet i [2.1 
 | Kolumn | Innehåll | Beskrivning och användning |
 | --- | --- | --- |
 | **ID** | Unik identifierare (t.ex. P-01) | Permanent identifierare för principen. ID återanvänds aldrig. Vid ändring eller ersättning skapas alltid en ny princip med nytt ID. |
-| **Kategori** | Typ av princip | Anger vilken typ av vägval principen styr. Varje princip ska tillhöra exakt en primär kategori:<br />
+| **Kategori** | Typ av princip | Anger vilken typ av vägval principen styr. Varje princip ska tillhöra exakt en primär kategori:<br>
 
-<br />• Syftes- och avgränsningsprinciper<br />
+<br>• Syftes- och avgränsningsprinciper<br>
 
-<br />• Tillits- och ansvarsprinciper<br />
+<br>• Tillits- och ansvarsprinciper<br>
 
-<br />• Arkitektur- och interoperabilitetsprinciper<br />
+<br>• Arkitektur- och interoperabilitetsprinciper<br>
 
-<br />• Anslutnings- och förändringsprinciper<br />
+<br>• Anslutnings- och förändringsprinciper<br>
 
-<br />• Styrnings- och samverkansprinciper<br />
+<br>• Styrnings- och samverkansprinciper<br>
 
-<br />
+<br>
 
-<br />Kategorin används för att underlätta förståelse och gruppering, men påverkar inte principens normerande styrka. |
+<br>Kategorin används för att underlätta förståelse och gruppering, men påverkar inte principens normerande styrka. |
 | **Princip (kortnamn)** | Kort benämning | Ett kort, beskrivande namn som gör principen lätt att referera till i dialog, dokumentation och beslut. |
 | **Principformulering** | Normativ formulering | En koncis, normativ formulering av principens innebörd. Ska uttrycka hur man ska agera och kunna användas för att avgöra konkreta vägval. |
 | **Gäller för** | Tillämpningsområde | Anger var principen är tillämplig, exempelvis: Övergripande eller en/flera specifikt utpekade normativa artefakter |
-| **Status** | Principens ställning | Anger om principen är:<br />
+| **Status** | Principens ställning | Anger om principen är:<br>
 
-<br />• *FÖRSLAG*<br />
+<br>• *FÖRSLAG*<br>
 
-<br />• *GÄLLANDE*<br />
+<br>• *GÄLLANDE*<br>
 
-<br />• *ERSATT*<br />
+<br>• *ERSATT*<br>
 
-<br />• *AVVECKLAD*<br />
+<br>• *AVVECKLAD*<br>
 
-<br />
+<br>
 
-<br />Endast principer med status *Gällande* ska tillämpas. |
+<br>Endast principer med status *Gällande* ska tillämpas. |
 | **Införd datum** | Ikraftträdande | Datum då principen beslutades och började gälla. Lämnas tomt för principer med status *Förslag*. |
 | **Beslutad av** | Beslutande forum | Anger vilket forum eller vilken funktion som fattat beslut om principen med hänvisning till beslutslogg/anteckningar eller liknande. |
 | **Källa / referens** | Motivering | Ev. referens till det underlag som motiverar principen. |

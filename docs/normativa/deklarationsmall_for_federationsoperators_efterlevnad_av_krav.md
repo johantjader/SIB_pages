@@ -32,7 +32,7 @@ Federationsoperatören **förklarar och garanterar** härmed att den:
 3.1. Har tagit del av, förstått och förbinder sig att följa det fullständiga och vid var tid gällande regelverket, med särskilt fokus på:
     - [[[[[[[`styrande_principer.md`](../konceptuella/styrande_principer.md)](../konceptuella/styrande_principer.md)](../konceptuella/styrande_principer.md)](../konceptuella/styrande_principer.md)](../konceptuella/styrande_principer.md)](./styrande_principer.md)](./styrande_principer.md) (särskilt P-02)
     - [[[[[[[`federationspolicy.md`](federationspolicy.md)](federationspolicy.md)](federationspolicy.md)](federationspolicy.md)](federationspolicy.md)](./federationspolicy.md)](./federationspolicy.md)
-    - [`tekniskt_ramverk_federationsinfrastrukturtjanster.md`](./tekniska_anslutningsregler_tjanster_komponenter.md)
+    - [`tekniskt_ramverk_federationsinfrastrukturtjanster.md`](./tekniskt_ramverk_federationsinfrastrukturtjanster.md)
     - [[[[[[[`oidf-profil.md`](oidf-profil.md)](oidf-profil.md)](oidf-profil.md)](oidf-profil.md)](oidf-profil.md)](./oidf-profil.md)](./oidf-profil.md)
     - [[[[[[[`ansvarsfordelning_ledningsaktor_federationsoperator.md`](ansvarsfordelning_ledningsaktor_federationsoperator.md)](ansvarsfordelning_ledningsaktor_federationsoperator.md)](ansvarsfordelning_ledningsaktor_federationsoperator.md)](ansvarsfordelning_ledningsaktor_federationsoperator.md)](ansvarsfordelning_ledningsaktor_federationsoperator.md)](./ansvarsfordelning_ledningsaktor_federationsoperator.md)](./ansvarsfordelning_ledningsaktor_federationsoperator.md)
 
